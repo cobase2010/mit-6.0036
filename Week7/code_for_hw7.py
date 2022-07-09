@@ -327,9 +327,9 @@ sgd_test(Sequential([Linear(2,3), ReLU(), Linear(3,2), SoftMax()], NLL()), test_
 # TEST 3: you should achieve 100% accuracy on the hard dataset (note
 # that we provided plotting code)
 # '''
-# X, Y = hard()
-# nn = Sequential([Linear(2, 10), ReLU(), Linear(10, 10), ReLU(), Linear(10,2), SoftMax()], NLL())
-# disp.classify(X, Y, nn, it=100000)
+X, Y = hard()
+nn = Sequential([Linear(2, 10), ReLU(), Linear(10, 10), ReLU(), Linear(10,2), SoftMax()], NLL())
+disp.classify(X, Y, nn, it=100000)
 # '''
 
 
